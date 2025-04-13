@@ -1,6 +1,6 @@
-#include "w5500_header.hpp"
+#include "W5500.hpp"
 #include "TCPSocketServer.h"
-#include "TCPSocketConnection.h"
+#include "W5500_TCPSocket.h"
 #include "EthernetInterface.h"
 #include "modbusTCPClient.hpp"
 

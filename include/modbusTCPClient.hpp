@@ -1,3 +1,5 @@
+
+
 #include <cstring>
 #include <stdint.h>
 #include <string>
@@ -5,6 +7,8 @@
 #include "EthernetInterface.h"
 #include <any>
 #include <variant>
+
+#include "W5500.hpp"
 
 #define MAX_MSG_LENGTH 260
 
