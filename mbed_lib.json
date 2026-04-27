@@ -1,0 +1,17 @@
+{
+    "name": "modbus",
+    "config": {
+        "slave-id": {
+            "help": "The Id of the slave device, only relevant for Modbus RTU slave",
+            "value": 127
+        },
+        "buffer-size": {
+            "help": "The maximum size of Modbus messages won't exceed 255 bytes",
+            "value": 256
+        },
+        "response_timeout_ms": {
+            "help": "The timeout before request is discarded",
+            "value": 100
+        }
+    }
+}

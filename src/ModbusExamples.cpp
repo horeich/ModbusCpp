@@ -1,6 +1,6 @@
 #include "ModbusExamples.hpp"
-#include "modbusRTUMaster.hpp"
-#include "modbusRTUSlave.hpp"
+#include "ModbusRTUMaster.h"
+#include "ModbusRTUSlave.h"
 #include "modbusTCPClient.hpp"
 #include "W5500.hpp"
 #include <mbed.h>
@@ -15,13 +15,13 @@ bool discreteInputs[2]={true,true};
 uint16_t holdingRegisters[2]={5,10};
 uint16_t inputRegisters[2]={20,30};
 UnbufferedSerial serialInterface(PC_10,PC_11);
-RS485 rs485(serialInterface,PA_14,PA_15,9600);
+UnbufferedRS485 rs485(serialInterface,PA_14,PA_15,9600);
 
 int ModbusExample()
 {
   #ifdef RTUMaster
    /*******************Modbus RTU Master************************/
-  ModbusRTUMaster master(rs485);
+  // ModbusRTUMaster master(rs485);
   wait_us(5000*1000);
 
 //  /*                        Write Coil Function                                */
@@ -34,7 +34,7 @@ int ModbusExample()
 
   /*                         Read Coils Function                                 */
   bool readBuf[2]={0};
-  master.readCoils(11,0,readBuf,2);
+  // master.readCoils(11,0,readBuf,2);
   printf("\nCoil register value 1 is %d \n",readBuf[0]);
   printf("\nCoil register value 2 is %d \n",readBuf[1]);
 
