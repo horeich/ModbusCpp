@@ -9,12 +9,10 @@ The repository is structured as follows:
 ```
 Modbus/
 ├── src/
-│   ├── ModbusExamples.cpp
 │   ├── modbusRTUMaster.cpp
 │   ├── modbusRTUSlave.cpp
 │   └── modbusTCPClient.cpp
 ├── include/
-│   ├── ModbusExamples.hpp
 │   ├── modbusRTUMaster.hpp
 │   ├── modbusRTUSlave.hpp
 │   ├── modbusTCPClient.hpp
@@ -97,7 +95,7 @@ Replace `your_environment`, `your_platform`, `your_board`, and `your_framework` 
 
 ### Example Structure
 
-ModbusExamples.cpp file has a structure similar to the following:
+A cpp file may have a structure similar to the following:
 
 ```c
 // Define the example you want to run
